@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <input type="number" name="num1" id="num1" placeholder="Enter a number">
+    <input type="text" name="oper" id="oper" placeholder="Enter a operators (+,-)">
+    <input type="number" name="num2" id="num2" placeholder="Enter another number">
+    <button onclick="calculate()">Calculate</button><br>
+    <h1 id="result"></h1>
+    <script>
+
+        function calculate(){
+            n1 = parseInt(document.getElementById("num1").value)
+            oper = document.getElementById("oper").value
+            n2 = parseInt(document.getElementById("num2").value)
+            result = 0
+            if (oper=='+')
+                result = n1+n2
+            else if (oper=='-')
+                result = n1-n2
+            else
+                result = "Invalid Operator"
+            document.getElementById("result").innerHTML=result
+
+            document.getElementById("num1").value=''
+        }
+    </script>
+    
+</body>
+</html>
