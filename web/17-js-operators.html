@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <h1>Operators</h1>
+
+    <script>
+        /**
+         *  Operators - Arithmetic,Comparision,Logical,Assignment,Bitwise
+         * 
+         * 1. Arithmetic : +,-,*,/,%,**,++,--,?:
+         * 2. Comparision : >,<,>=,<=,==,===
+         * 3. Logical : &&,||,!
+         * 4. Ternary
+         * */
+
+        console.log('Arithmetic Opertos')
+        num1=100
+        num2=200
+        result = num1++
+        console.log('unary ++ result '+result+ " num1 "+num1)
+        result = num1+num2
+        console.log(num1 +" +"+ num2 + " = "+result)
+       // console.log(num1 ," +", num2 , " = "+result)
+        console.log('comparision')
+        console.log(" num1>num2 "+(num1>num2))
+        num1=100
+        num4='100'
+        result = (num1==num4)
+        console.log(" num1==num4 "+result)
+        result = (num1===num4)
+        console.log(" num1===num4 "+result)
+        console.log('logical operators')
+        num1=200
+        num2 =150
+        num3=175
+
+        result = (num1>num2) && (num3>num2)
+        console.log('(num1>num2) && (num3>num2) ',result)
+        result = !((num1>num2) && (num3>num2))
+        console.log('!(num1>num2) && (num3>num2) ',result)
+
+        result = num1>num2?'num1>num2':'num2>num1'
+        console.log("num1>num2?'num1>num2':'num2>num1' ",result)
+    </script>
+</body>
+</html>
