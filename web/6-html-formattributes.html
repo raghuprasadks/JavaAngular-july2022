@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<!-- html comment-->
+<body>
+    <h1>Sign Up</h1>  
+    <form action="5-html-success.html" method="post">  
+    <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="10" value="raghu" required><br>
+    <input type="email" name="email" id="email" placeholder="Enter your email" readonly><br>
+    <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile" disabled><br>
+    Sex: <input type="radio" name="sex" id="sex">Male
+    <input type="radio" name="sex" id="sex">Female<br>
+    Qualification: <input type="checkbox" name="ug" id="ug">UG
+    <input type="checkbox" name="pg" id="pg">PG
+    <input type="checkbox" name="oth" id="oth">Others<br>
+    Location: <select name="location" id="location">
+        <option value="bng">Bengaluru</option>
+        <option value="chn">Chennai</option>
+        <option value="del">Delhi</option>
+    </select><br>    
+    Enter DOB:
+    <input type="date" name="dob" id="dob"><br>
+
+    Enter DOB and Time:
+    <input type="datetime-local" name="dobt" id="dobt"><br>
+    
+  <input type="file" name="file" id="file" multiple><br>
+
+    <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>

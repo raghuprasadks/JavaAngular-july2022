@@ -1,0 +1,27 @@
+Fullstack Web Application
+Development
+
+Front End and Backend
+Front end
+HTML/CSS/JavaScript/AJAX
+HTML - Hyper Text Markup Language
+CSS - Cascading Style Sheet
+Java Script - Intetaction
+AJAX - Asynochronous Java Script and XML
+Bootstrap
+Angular - Google
+React - Facebook
+
+Backend
+Programming - Java/Python/C#
+Database- MySQL/Mongo
+Framework - Spring,Spring Boot,
+ORM-JPA-Hibernate
+
+HTML
+Tree Structure
+Document Object Model
+
+
+file:///E:/kaushalya.tech/consultancy/operative/training/web/5-html-success.html?name=raghu&email=prasadraghuks%40gmail.com&mobile=9845547471&sex=on&pg=on&location=bng&password=test
+

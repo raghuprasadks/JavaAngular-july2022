@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+}
+/*
+th,td{
+    border: 2px solid blue;
+    margin: 10px;
+}
+*/
+div{
+    border: 2px solid blue;
+    margin: 10px;
+}
+#divsty{
+    border: 2px solid green;
+    margin: 20px;
+    padding: 5px;
+}
+h4{
+    background-color: burlywood;
+}
