@@ -1,0 +1,9 @@
+CSS
+block level elements
+h1..h6,p,div,ul,li
+inline elements
+a,img
+
+block level - inline
+
+https://www.kaushalya.tech/
