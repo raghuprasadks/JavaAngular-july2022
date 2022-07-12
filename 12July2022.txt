@@ -8,3 +8,12 @@ block level - inline
 
 https://www.kaushalya.tech/
 https://github.com/raghuprasadks
+
+Install node.js,postman,mysql
+
+Java script  - programming language
+scripting language
+interpreter
+browser
+server side program
+node.js
