@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Fuctions</title>
+</head>
+<body>
+    <h1>Higher Order Functions - foreach,map,filter,reduce</h1>
+    <script>
+        marks = [20,25,30,46,45]
+        console.log('Before grace '+marks)
+        // give grace of 2
+        for (i=0;i<marks.length;i++){
+            marks[i]=marks[i]+2
+        }
+        console.log('After grace '+marks)
+      
+        function grace(mark){
+            mark = mark+2
+        }
+
+        marks.forEach(grace);
+        console.log("for each regular function "+marks)
+        
+
+        // for each with arrow function
+        marks.forEach(mark => {
+            mark+2
+        });
+
+        console.log("for each with arrow function "+marks)
+        //for eachwith regular fuction
+
+        
+        //map
+        console.log("map ")
+
+        
+        marks = [20,25,30,46,45]
+
+        updatedmarks = marks.map(mark=>mark*2)
+
+        console.log("original marks "+marks)
+
+        console.log("map - double "+updatedmarks)
+
+        console.log("filter demo")
+
+        marksfilter = marks.filter(mark=>mark<=25)
+        console.log("filter original "+marks)
+        console.log("filter  "+marksfilter)
+
+        console.log("reduce ")
+        sum = marks.reduce((total,mark)=>total+mark)
+        console.log("total "+sum)
+        console.log("marks after reduce "+marks)
+        console.log("sum using without special functions")
+        total = 0
+        for (i=0;i<marks.length;i++){
+            total = total +marks[i]
+        }
+    </script>
+</body>
+</html>
