@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays demo</h1>
+    <script>
+        // Array creation
+        console.log("array creation")
+        fruits = []
+        fruits.push('banana')
+        fruits.push('apple')
+        fruits.push('guava')
+        console.log('display array elements')
+        for (i=0;i<fruits.length;i++){
+            console.log(fruits[i])
+        }
+        console.log("update element")
+        fruits[2]='mango'
+        console.log('display after updation')
+        for (fruit of fruits){
+            console.log(fruit)
+        }
+
+        console.log('delete element')
+        fruits.pop()
+        console.log("after pop ",fruits)
+    </script>
+</body>
+</html>

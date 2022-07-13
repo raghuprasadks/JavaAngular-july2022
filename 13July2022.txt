@@ -1,0 +1,5 @@
+Arrays,objects,object constructors
+AJAX- fetchapi
+array - dynamic
+elements of different datatypes
+fruits = [] 
