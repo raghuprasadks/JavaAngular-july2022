@@ -14,7 +14,6 @@
             name:'ravi',
             sal:40000
         }
-
         employee=function(code,name,sal){
             this.code = code;
             this.name = name;
@@ -26,6 +25,18 @@
         employees.push(emp1)
         employees.push(emp2)
         console.log("employees ",employees)
+    
+        emp={
+            code:1,
+            name:'ravi',
+            sal:40000,
+            getSal:function(){
+                return this.sal
+            }
+        }
+
+        console.log("salary "+emp.getSal())
+    
     </script>
 </body>
 </html>
