@@ -3,3 +3,5 @@ AJAX- fetchapi
 array - dynamic
 elements of different datatypes
 fruits = [] 
+
+JSON- Java Script Object Notation

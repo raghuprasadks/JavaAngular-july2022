@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Get Todos</button>
+</div>
+<div>
+    <table id ="display"></table>
+</div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    //  document.getElementById("demo").innerHTML =  this.responseText;
+      console.log("response ")
+   //   console.log("response ",this.responseText)
+      displayData(JSON.parse(this.responseText))
+    }
+  };
+  xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos");
+  xhttp.send();
+}
+
+function displayData(todos){
+    //back tick
+    data = "<tr><th>User Id</th><th>Id</th><th>Title</th><th>Completed</th></tr>"
+    for (i=0;i<todos.length;i++){
+        todo = todos[i]
+      //  console.log("todo ",todo)
+      data +=`<tr><td>${todo.userId}</td><td>${todo.id}</td><td>${todo.title}</td><td>${todo.completed}</td></tr>`
+       // console.log(`User Id : ${todo.userId} id :${todo.id} title :${todo.title} completed :${todo.completed}`)
+    }
+    document.getElementById("display").innerHTML=data;
+
+}
+</script>
+
+</body>
+</html>
