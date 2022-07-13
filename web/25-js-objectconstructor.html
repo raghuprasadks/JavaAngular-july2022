@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+<body>
+    <h1>Object Constructor</h1>
+    <script>
+        emp={
+            code:1,
+            name:'ravi',
+            sal:40000
+        }
+
+        employee=function(code,name,sal){
+            this.code = code;
+            this.name = name;
+            this.sal = sal;
+        }
+        emp1 = new employee(1,'ranga',35000)
+        emp2 = new employee(2,'rekha',35000)
+        employees=[]
+        employees.push(emp1)
+        employees.push(emp2)
+        console.log("employees ",employees)
+    </script>
+</body>
+</html>
