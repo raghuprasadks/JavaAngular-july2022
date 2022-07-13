@@ -19,39 +19,25 @@
       
         function grace(mark){
             mark = mark+2
-        }
-
+       }
         marks.forEach(grace);
         console.log("for each regular function "+marks)
-        
-
         // for each with arrow function
         marks.forEach(mark => {
             mark+2
         });
-
         console.log("for each with arrow function "+marks)
-        //for eachwith regular fuction
-
-        
+        //for eachwith regular fuction        
         //map
-        console.log("map ")
-
-        
+        console.log("map ")        
         marks = [20,25,30,46,45]
-
         updatedmarks = marks.map(mark=>mark*2)
-
         console.log("original marks "+marks)
-
         console.log("map - double "+updatedmarks)
-
         console.log("filter demo")
-
         marksfilter = marks.filter(mark=>mark<=25)
         console.log("filter original "+marks)
         console.log("filter  "+marksfilter)
-
         console.log("reduce ")
         sum = marks.reduce((total,mark)=>total+mark)
         console.log("total "+sum)
