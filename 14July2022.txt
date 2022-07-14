@@ -1,0 +1,15 @@
+1. FetchAPI
+promise
+resolve
+reject
+
+then
+catch
+callback
+callback hell
+
+2. Postman
+get,post,put,delete
+3. array
+4. Asynchronous programming
+5. Angular
