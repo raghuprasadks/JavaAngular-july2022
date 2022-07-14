@@ -12,7 +12,13 @@
     <input type="text" name="id" id="id" placeholder="Enter Id">
     <input type="text" name="title" id="title" placeholder="Enter Title">
     <input type="button" value="Add Todo" onclick="addTodo()">
+    <input type="button" value="Display Todo" onclick="displayTodo()">
+    <div>
+        <table id ="display"></table>
+    </div>
     <script>
+
+        todos=[]
         function addTodo(){
             userid = document.getElementById("userid").value
             id = document.getElementById("id").value
@@ -34,7 +40,8 @@
                 }
             })
             .then(response=>response.json())
-            .then(json=>console.log(json))
+          //  .then(json=>console.log(json))
+          .then(json=>todos.unshift(json))          
             .catch(reason=>console.log(reason))
         }
 
@@ -42,10 +49,30 @@
             console.log("gettotos")
             fetch("https://jsonplaceholder.typicode.com/todos")
             .then(response=>response.json())
-            .then(json=>console.log(json))
-            .catch(reason=>console.log(reason))
-            
+           // .then(json=>console.log(json))
+           .then(json=>todos=json)
+            .catch(reason=>console.log(reason))            
         }
+
+        function displayTodo(){
+    //back tick
+    data = "<tr><th>User Id</th><th>Id</th><th>Title</th><th>Completed</th></tr>"
+    for (i=0;i<todos.length;i++){
+        todo = todos[i]
+      //  console.log("todo ",todo)
+      data +=`<tr><td>${todo.userId}</td><td>${todo.id}</td><td>${todo.title}</td><td>${todo.completed}</td><td><button onclick=deleteTodo(${todo.id})>Delete</button></td></tr>`
+       // console.log(`User Id : ${todo.userId} id :${todo.id} title :${todo.title} completed :${todo.completed}`)
+    }
+    document.getElementById("display").innerHTML=data;
+
+}
+
+function deleteTodo(id)
+{
+    console.log("delete todo ",id)
+    todos = todos.filter(todo=>todo.id!=id)
+    displayTodo()
+}
     </script>    
 </body>
 </html>
