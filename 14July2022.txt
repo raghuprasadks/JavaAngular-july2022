@@ -13,3 +13,33 @@ get,post,put,delete
 3. array
 4. Asynchronous programming
 5. Angular
+
+npm - node package manager
+www.npmjs.com
+
+npm install -g @angular/cli
+
+ng --version
+ng version
+
+1. Create first angular app
+ng new angularbasics
+2. cd angularbasics
+code .
+3. To run the project
+ng serve --open
+
+https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts-is-disabled-on-this-system
+
+4. Explore project files
+angular.json
+
+index.html
+<app-root></app-root>
+selector
+
+main.ts
+app.module.ts
+app.component.ts
+
+
