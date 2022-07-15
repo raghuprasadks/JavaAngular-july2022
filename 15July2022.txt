@@ -1,0 +1,21 @@
+1. Introduction different
+web application architecture
+2. SDLC
+3. Angular
+4. MCQ test - kahoot-htmlcssjsajax - 20
+5. Programming - Monday
+6. One to one 
+feedback
+
+const runs=[3,4,5,9,10]
+runs = [4,6,8,50]
+runs.push
+
+const add = function(n1,n2)
+
+
+Type Script:
+
+Datatypes
+Step 1- create datatypes component
+ng g c datatypes
