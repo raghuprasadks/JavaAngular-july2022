@@ -19,3 +19,6 @@ Type Script:
 Datatypes
 Step 1- create datatypes component
 ng g c datatypes
+directives
+ngFor
+ngIf
