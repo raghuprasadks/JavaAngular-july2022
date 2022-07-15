@@ -42,4 +42,6 @@ main.ts
 app.module.ts
 app.component.ts
 
-
+5. To create new component
+ng g component user
+ng g c user
