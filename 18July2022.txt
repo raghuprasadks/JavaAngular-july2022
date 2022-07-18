@@ -7,3 +7,30 @@ folder under app folder
 
 3. Step 3 - Create User.ts
 under the model
+
+
+users Component
+
+1. Step 1 - Create a new
+component user
+ng g c components/users
+2. Initialize user model as array
+and assign value
+3. variables load extended
+
+
+
+
+
+<div *ngIf="isValid;else other_content">
+    content here ...
+</div>
+
+<ng-template #other_content>other content here...</ng-template>
+
+<div *ngIf="isValid;then content else other_content">here is ignored</div>
+<ng-template #content>content here...</ng-template>
+<ng-template #other_content>other content here...</ng-template>
+
+https://codecraft.tv/courses/angular/built-in-directives/ngstyle-and-ngclass/
+

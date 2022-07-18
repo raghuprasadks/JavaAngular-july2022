@@ -8,12 +8,16 @@ import { DatatypesComponent } from './datatypes/datatypes.component';
 import { DirectivesComponent } from './directives/directives.component';
 
 import { UserComponent } from './components/user/user.component';
+import { UsersComponent } from './components/users/users.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     DatatypesComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
