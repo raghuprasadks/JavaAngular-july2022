@@ -1,0 +1,19 @@
+<h1>One-Way Data Binding</h1>
+<p>Principal Amount : {{principal}}</p>
+<p>Rate of Interest : {{roi}}</p>
+<p>time : {{time}}</p>
+<p>Simple Interest {{(principal*roi*time)/100}}</p>
+
+<h1>Two-Way Data Binding</h1>
+<label for="principal">principal</label><br>
+<input type="number" name="principal" id="principal" [(ngModel)]="principal"><br>
+<label for="roi">roi</label><br>
+<input type="number" name="roi" id="roi" [(ngModel)]="roi"><br>
+<label for="time">time</label><br>
+<input type="number" name="time" id="time"  [(ngModel)]="time"><br>
+
+<p>Principal Amount : {{principal}}</p>
+<p>Rate of Interest : {{roi}}</p>
+<p>time : {{time}}</p>
+<p>Simple Interest {{(principal*roi*time)/100}}</p>
+

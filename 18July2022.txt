@@ -19,9 +19,6 @@ and assign value
 3. variables load extended
 
 
-
-
-
 <div *ngIf="isValid;else other_content">
     content here ...
 </div>
@@ -33,4 +30,9 @@ and assign value
 <ng-template #other_content>other content here...</ng-template>
 
 https://codecraft.tv/courses/angular/built-in-directives/ngstyle-and-ngclass/
+
+
+
+data binding..
+one way and two way data binding
 
