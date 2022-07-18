@@ -9,6 +9,7 @@ import { DirectivesComponent } from './directives/directives.component';
 
 import { UserComponent } from './components/user/user.component';
 import { UsersComponent } from './components/users/users.component';
+import { NgswitchdemoComponent } from './components/ngswitchdemo/ngswitchdemo.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { UsersComponent } from './components/users/users.component';
     UserComponent,
     DatatypesComponent,
     DirectivesComponent,
-    UsersComponent
+    UsersComponent,
+    NgswitchdemoComponent
   ],
   imports: [
     BrowserModule,
