@@ -15,3 +15,12 @@ ng g c components/ngstyledemo
 Develop product master
 1. Create product component
 ng g c components/product
+
+Bootstrap - css framework
+by twitter
+html,css,javascript,jquery
+css classes
+Mobile first approach
+Responsive
+Grid based system
+12 columns
