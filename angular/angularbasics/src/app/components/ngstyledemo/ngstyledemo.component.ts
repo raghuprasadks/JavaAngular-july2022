@@ -39,13 +39,16 @@ export class NgstyledemoComponent implements OnInit {
     switch (country) {
       case 'UK':
         ccolor= 'green';
-        return ccolor
+        break;
+        //return ccolor
       case 'USA':
         ccolor= 'blue';
-        return ccolor        
+        //return ccolor 
+        break;       
       case 'HK':
         ccolor= 'red';
-        return ccolor
+       // return ccolor
+       break;
     }
     return ccolor
   }
