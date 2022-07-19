@@ -1,0 +1,14 @@
+*ngFor
+*ngIf
+ngStyle - style
+ngClass - class
+
+property binding - []
+event binding - ()
+[()] - both property and event
+
+style="background-color:blue;"
+div [ngStyle]="{''}"
+
+ng g c components/ngstyledemo
+

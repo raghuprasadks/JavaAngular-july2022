@@ -13,6 +13,7 @@ import { UserComponent } from './components/user/user.component';
 import { UsersComponent } from './components/users/users.component';
 import { NgswitchdemoComponent } from './components/ngswitchdemo/ngswitchdemo.component';
 import { DatabindingdemoComponent } from './components/databindingdemo/databindingdemo.component';
+import { NgstyledemoComponent } from './components/ngstyledemo/ngstyledemo.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DatabindingdemoComponent } from './components/databindingdemo/databindi
     DirectivesComponent,
     UsersComponent,
     NgswitchdemoComponent,
-    DatabindingdemoComponent
+    DatabindingdemoComponent,
+    NgstyledemoComponent
   ],
   imports: [
     BrowserModule,
