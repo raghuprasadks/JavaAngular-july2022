@@ -12,3 +12,6 @@ div [ngStyle]="{''}"
 
 ng g c components/ngstyledemo
 
+Develop product master
+1. Create product component
+ng g c components/product

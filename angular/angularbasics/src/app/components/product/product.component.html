@@ -1,0 +1,38 @@
+<div>
+    <h1>Product Master</h1>
+    <div>
+        <label for="code">Code</label><br>
+        <input type="number" name="code" id="code" [(ngModel)]="prod.code"><br>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" [(ngModel)]="prod.name"><br>
+        <label for="desc">Description</label><br>
+        <input type="text" name="desc" id="desc" [(ngModel)]="prod.desc"><br>
+        <label for="manu">Manufacturer</label><br>
+        <input type="text" name="manu" id="manu" [(ngModel)]="prod.manu"><br>
+        <label for="price">Price</label><br>
+        <input type="number" name="price" id="price" [(ngModel)]="prod.price"><br>
+        <button (click)="addProduct()">Add Product</button>
+
+
+    </div>
+    <div>
+        <h1>List Products</h1>
+
+        <table>
+            <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Manufacturer</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let prod of products">
+            <td>{{prod.code}}</td>
+            <td>{{prod.name}}</td>
+            <td>{{prod.desc}}</td>
+            <td>{{prod.manu}}</td>
+            <td>{{prod.price}}</td>        
+        </tr>
+    </table>
+    </div>
+</div>

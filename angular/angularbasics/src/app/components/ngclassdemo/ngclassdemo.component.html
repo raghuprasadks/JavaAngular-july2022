@@ -29,3 +29,14 @@
         [class.text-danger]="person.country === 'HK'">{{ person.name }} ({{ person.country }})
     </li>
   </ul>
+
+<!--
+  <h1>ngclass - dynamic class - method 3</h1>
+<ul *ngFor="let person of people">
+    <li [ngClass]="{
+        'getClass(person.country)':person.country === 'UK'
+      }"> {{ person.name }} ({{ person.country }})
+    </li>
+</ul>
+
+-->

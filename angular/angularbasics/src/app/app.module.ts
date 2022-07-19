@@ -15,6 +15,7 @@ import { NgswitchdemoComponent } from './components/ngswitchdemo/ngswitchdemo.co
 import { DatabindingdemoComponent } from './components/databindingdemo/databindingdemo.component';
 import { NgstyledemoComponent } from './components/ngstyledemo/ngstyledemo.component';
 import { NgclassdemoComponent } from './components/ngclassdemo/ngclassdemo.component';
+import { ProductComponent } from './components/product/product.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { NgclassdemoComponent } from './components/ngclassdemo/ngclassdemo.compo
     NgswitchdemoComponent,
     DatabindingdemoComponent,
     NgstyledemoComponent,
-    NgclassdemoComponent
+    NgclassdemoComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

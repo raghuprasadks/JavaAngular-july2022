@@ -34,23 +34,24 @@ export class NgclassdemoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getColor(country:string):string {
-    let ccolor='orange'
+  getClass(country:string):string {
+    console.log('getClass',country)
+    let cssClass='text-success'
     switch (country) {
       case 'UK':
-        ccolor= 'green';
+        cssClass= 'text-success';
         break;
         //return ccolor
       case 'USA':
-        ccolor= 'blue';
+        cssClass= 'text-primary';
         //return ccolor 
         break;       
       case 'HK':
-        ccolor= 'red';
+        cssClass= 'text-danger';
        // return ccolor
        break;
     }
-    return ccolor
+    return cssClass
   }
 
 }
