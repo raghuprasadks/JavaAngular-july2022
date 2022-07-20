@@ -26,3 +26,28 @@ Step 4 - Create todo component
 import HttpClientModule in app.module.ts
 import todoservice and update in providers
 inject todo service into todo component
+
+
+openWeathermap
+384db1ce93218e20fd384d3016372238
+
+https://openweathermap.org/
+
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+api.openweathermap.org/data/2.5/weather?q=bangalore&appid=384db1ce93218e20fd384d3016372238
+
+WeatherService
+WeatherComponent
+
+<Enter city name <>
+<submit>
+
+Output:
+Country :
+City :
+Temp:
+Temp-min:
+Temp-max:
+Pressure:
+Wind Speed
