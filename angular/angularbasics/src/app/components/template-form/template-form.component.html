@@ -1,0 +1,24 @@
+<div>
+<h1>template-form</h1>
+</div>
+<div>
+    <form #regUserForm="ngForm" (ngSubmit)="UserRegistration(regUserForm)">
+        
+        
+        <div>
+            <input type="text" placeHolder="First Name" name="firstName" ngModel required>
+        </div>
+        <div>
+            <input type="text" placeHolder="Last Name" name="lastName" ngModel required>
+        </div>
+        <div>
+            <input type="email" placeHolder="Email" name="email" ngModel required>
+        </div>
+    
+        
+        <div>
+            <button type="submit" [disabled]="!regUserForm.valid">Register</button>
+        </div>
+
+    </form>
+</div>

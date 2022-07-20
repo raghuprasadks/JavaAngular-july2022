@@ -51,3 +51,13 @@ Temp-min:
 Temp-max:
 Pressure:
 Wind Speed
+
+Forms in angular
+
+Template Driven Form - 
+FormsModule to be imported in app.module.ts
+
+Reactive Form
+
+
+Steps to create template driven form
