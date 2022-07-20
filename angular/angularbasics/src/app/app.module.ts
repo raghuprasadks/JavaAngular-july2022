@@ -20,6 +20,7 @@ import { TodoComponent } from './components/todo/todo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoService } from './services/todo.service';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
+import { StylenclassComponent } from './components/stylenclass/stylenclass.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TemplateFormComponent } from './components/template-form/template-form.
     NgclassdemoComponent,
     ProductComponent,
     TodoComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    StylenclassComponent
   ],
   imports: [
     BrowserModule,

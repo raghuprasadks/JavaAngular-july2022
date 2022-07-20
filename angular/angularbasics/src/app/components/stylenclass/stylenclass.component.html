@@ -1,0 +1,11 @@
+<h1>ngstylenclassdemo</h1>
+
+<h1>ngStyle</h1>
+<button [ngStyle]="{'font-size.px':15,'font-style':'italic','color':'red'}">ngStyle Demo 1</button><br>
+<button [ngStyle]="{'font-size.px':18,'font-style':'italic','color':gender=='male'?'blue':'pink'}">ngStyle Demo 2</button><br>
+<button [ngStyle]="addStyle()">ngStyle Demo 3</button><br>
+
+<h1>ngClass</h1>
+<button [ngClass]="['btn-bold','btn-italic','btn-red']">ngClass - Demo 1 - Array</button><br>
+<button [ngClass]="{'btn-bold':true,'btn-italic':false,'btn-blue':true}">ngClass - Demo 2 - Object</button><br>
+<button [ngClass]="addClasses()">ngClass Demo3 - method</button>
