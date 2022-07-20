@@ -16,7 +16,9 @@ import { DatabindingdemoComponent } from './components/databindingdemo/databindi
 import { NgstyledemoComponent } from './components/ngstyledemo/ngstyledemo.component';
 import { NgclassdemoComponent } from './components/ngclassdemo/ngclassdemo.component';
 import { ProductComponent } from './components/product/product.component';
-
+import { TodoComponent } from './components/todo/todo.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TodoService } from './services/todo.service';
 
 @NgModule({
   declarations: [
@@ -29,14 +31,16 @@ import { ProductComponent } from './components/product/product.component';
     DatabindingdemoComponent,
     NgstyledemoComponent,
     NgclassdemoComponent,
-    ProductComponent
+    ProductComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

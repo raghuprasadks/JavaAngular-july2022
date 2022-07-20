@@ -1,3 +1,28 @@
 To join the video meeting, click this link: https://meet.google.com/dia-ghar-gxh
 Otherwise, to join by phone, dial +1 540-835-0127 and enter this PIN: 252 888 273#
 To view more phone numbers, click this link: https://tel.meet/dia-ghar-gxh?hs=5
+
+Agenda:
+Services
+Types of forms
+Template driven form
+Reactive form
+
+Services - Common functionality
+backend API
+Injecting that service into the components
+ng g s <nameoftheservice>
+@Injectable
+AJAX,FetchAPI
+HttpClient
+RxJS
+Publisher and subscriber
+
+Step 1 - Model - Todos.ts in model folder
+Step 2 - Created todo service under service folder
+ng g s services/todo
+Step 3 - Use HttpClient and call todo api
+Step 4 - Create todo component
+import HttpClientModule in app.module.ts
+import todoservice and update in providers
+inject todo service into todo component
