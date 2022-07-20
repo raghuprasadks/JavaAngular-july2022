@@ -1,0 +1,9 @@
+.form-invalid{
+    border-color: red;
+    background-color:lightpink;
+}
+
+.form-valid{
+    border-color: green;
+    background-color: lightgreen;
+}

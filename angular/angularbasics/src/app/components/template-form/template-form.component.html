@@ -1,24 +1,28 @@
-<div>
-<h1>template-form</h1>
-</div>
-<div>
-    <form #regUserForm="ngForm" (ngSubmit)="UserRegistration(regUserForm)">
-        
-        
-        <div>
-            <input type="text" placeHolder="First Name" name="firstName" ngModel required>
-        </div>
-        <div>
-            <input type="text" placeHolder="Last Name" name="lastName" ngModel required>
-        </div>
-        <div>
-            <input type="email" placeHolder="Email" name="email" ngModel required>
-        </div>
-    
-        
-        <div>
-            <button type="submit" [disabled]="!regUserForm.valid">Register</button>
-        </div>
+<p>Template Driven Form</p>
 
-    </form>
+<form #regUserForm="ngForm" (ngSubmit)="UserRegistration(regUserForm)">
+<div>
+    {{validationMessage}}
 </div>
+    <div>
+        <input type="text" placeHolder="First Name" name="firstName" ngModel required
+        #firstNameControl="ngModel"
+        [ngClass]="[(firstNameControl.touched && !firstNameControl.valid)?'form-invalid':'']"
+        [ngClass]="[(firstNameControl.valid)?'form-valid':'']"
+        > 
+    </div> 
+    <div>
+        <input type="text" placeHolder="Last Name" name="lastName" ngModel required>
+    </div>
+    <div>
+        <input type="text" placeHolder="Email Id" name="emailID" ngModel required
+        #validateEmail="ngModel">
+        <br/>
+        <span *ngIf="validateEmail.touched && !validateEmail.valid">EmailID is Required</span>
+    </div>
+    <div>
+        <button class="btn" type="submit" [disabled]="!regUserForm.valid">Register</button>
+        <button class="btn" type="reset">Reset</button>
+    </div>
+
+</form>

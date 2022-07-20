@@ -8,22 +8,32 @@ import { NgForm } from '@angular/forms';
 })
 export class TemplateFormComponent implements OnInit {
 
+  validationMessage: string = "";
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  UserRegistration(frmValues:NgForm){
-    if (!frmValues.valid)
-      {
-        console.log('invalid form')
-        return
-      }
-    console.log("user registration")
-    console.log(frmValues.value)
-    console.log('FirstName: ' + frmValues.controls.firstName.value);
-   console.log('first name ',frmValues.value['firstName'])
+  UserRegistration(frmValues: NgForm) {
+    if (!frmValues.valid) {
+      console.log('Form is Invalid');
+      return;
+    }
 
+    // validations:
+    if (frmValues.controls.lastName.value.length <= 5) {
+      this.validationMessage = "Last name should be more than 5 char in length";
+      return;
+    }
+
+    console.log(frmValues)
+    console.log('FirstName: ' + frmValues.controls.firstName.value);
+    // console.log('FirstName LocalVariable: ' + this.firstName);
+    console.log('LastName: ' + frmValues.controls.lastName.value);
+    console.log('EmailID: ' + frmValues.controls.emailID.value);
+
+    frmValues.reset();
   }
 
 }
