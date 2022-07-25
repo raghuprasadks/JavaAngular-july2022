@@ -25,6 +25,7 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
 import { ReactiveFormValidationComponent } from './components/reactive-form-validation/reactive-form-validation.component';
 import { ParentoneComponent } from './components/parentone/parentone.component';
 import { ChildoneComponent } from './components/childone/childone.component';
+import { PipesdemoComponent } from './components/pipesdemo/pipesdemo.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ChildoneComponent } from './components/childone/childone.component';
     ReactiveFormComponent,
     ReactiveFormValidationComponent,
     ParentoneComponent,
-    ChildoneComponent
+    ChildoneComponent,
+    PipesdemoComponent
   ],
   imports: [
     BrowserModule,

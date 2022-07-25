@@ -10,6 +10,11 @@ https://fireship.io/lessons/sharing-data-between-angular-components-four-methods
 <master form>
 <Detail form>
 
+Assignment
+Sharing data between components
+4 types
+https://angular.io/guide/pipes
+
 CRUD
 <creating>
 <listing update delete>
