@@ -12,6 +12,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ChildoneComponent implements OnInit {
 
   @Input() message:string=""
+  childprop:string="I am your child"
 
   constructor() { }
 
