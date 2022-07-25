@@ -6,3 +6,10 @@ Forms-
 https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/
 3. Pipes
 4. Custom pipes
+
+<master form>
+<Detail form>
+
+CRUD
+<creating>
+<listing update delete>
