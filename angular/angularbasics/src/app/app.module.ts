@@ -22,6 +22,7 @@ import { TodoService } from './services/todo.service';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
 import { StylenclassComponent } from './components/stylenclass/stylenclass.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
+import { ReactiveFormValidationComponent } from './components/reactive-form-validation/reactive-form-validation.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
     TodoComponent,
     TemplateFormComponent,
     StylenclassComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ReactiveFormValidationComponent
   ],
   imports: [
     BrowserModule,
