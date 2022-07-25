@@ -1,5 +1,7 @@
 <p>parentone works!</p>
 
-<app-childone [message]="msgFromParent"></app-childone>
+<app-childone [message]="msgFromParent" (messageEvent)="receiveMessage($event)"></app-childone>
 
 <p>I can see my child : {{message}}</p>
+
+<p>Output from child ::  {{message}}</p>

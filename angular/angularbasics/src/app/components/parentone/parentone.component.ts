@@ -26,4 +26,8 @@ export class ParentoneComponent implements OnInit,AfterViewInit  {
   ngOnInit(): void {
   }
 
+  receiveMessage($event: string) {
+    this.message = $event
+  }
+
 }
