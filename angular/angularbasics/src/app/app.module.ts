@@ -23,6 +23,8 @@ import { TemplateFormComponent } from './components/template-form/template-form.
 import { StylenclassComponent } from './components/stylenclass/stylenclass.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 import { ReactiveFormValidationComponent } from './components/reactive-form-validation/reactive-form-validation.component';
+import { ParentoneComponent } from './components/parentone/parentone.component';
+import { ChildoneComponent } from './components/childone/childone.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ReactiveFormValidationComponent } from './components/reactive-form-vali
     TemplateFormComponent,
     StylenclassComponent,
     ReactiveFormComponent,
-    ReactiveFormValidationComponent
+    ReactiveFormValidationComponent,
+    ParentoneComponent,
+    ChildoneComponent
   ],
   imports: [
     BrowserModule,

@@ -3,5 +3,6 @@ Forms-
  Reactive forms
 1. Reactive Forms
 2. Sharing data between components
+https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/
 3. Pipes
 4. Custom pipes
