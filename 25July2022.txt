@@ -1,0 +1,7 @@
+Forms-
+ Template driven form -forms module- app.module.ts
+ Reactive forms
+1. Reactive Forms
+2. Sharing data between components
+3. Pipes
+4. Custom pipes

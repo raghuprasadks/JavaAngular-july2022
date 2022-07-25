@@ -61,3 +61,4 @@ Reactive Form
 
 
 Steps to create template driven form
+1. ng g c components/template-form

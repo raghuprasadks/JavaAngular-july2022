@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 //import { UserComponent } from './user/user.component';
@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TodoService } from './services/todo.service';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
 import { StylenclassComponent } from './components/stylenclass/stylenclass.component';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +37,15 @@ import { StylenclassComponent } from './components/stylenclass/stylenclass.compo
     ProductComponent,
     TodoComponent,
     TemplateFormComponent,
-    StylenclassComponent
+    StylenclassComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
