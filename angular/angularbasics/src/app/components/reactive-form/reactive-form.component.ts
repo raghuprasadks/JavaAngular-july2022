@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -8,6 +8,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ReactiveFormComponent implements OnInit {
   regUserForm:FormGroup | any
+  /**
+   * Method 1 - inject formBuilder into the constructor
   constructor(formBuilder:FormBuilder) {
 
     this.regUserForm=formBuilder.group({
@@ -16,7 +18,26 @@ export class ReactiveFormComponent implements OnInit {
       emailId:[]
     })
    }
+ */
 
+   //Method 2 - using new FormBuilder
+   /**
+   constructor(){
+
+   this.regUserForm = new FormBuilder().group({
+    firstName: new FormControl('Mark'),
+    lastName:  new FormControl(),
+    emailId:  new FormControl(),
+  })
+}
+ */
+  constructor(){
+this.regUserForm = new FormGroup({
+  firstName: new FormControl('John', Validators.required),
+  lastName: new FormControl(),
+  emailId: new FormControl(),
+});
+}
   ngOnInit(): void {
   }
 

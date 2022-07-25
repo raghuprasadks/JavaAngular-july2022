@@ -2,8 +2,14 @@
 
 <form [formGroup]="regUserForm" (ngSubmit)="UserRegistration(regUserForm)"> 
 
+    <!--
     <div>
         <input type="text" placeHolder="First Name" formControlName="firstName" required>
+    </div>
+    -->
+
+    <div>
+        <input type="text" placeHolder="First Name" formControlName="firstName">
     </div>
     <div>
         <input type="text" placeHolder="Last Name" formControlName="lastName" required>
