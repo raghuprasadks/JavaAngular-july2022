@@ -1,0 +1,27 @@
+{
+  "product": [
+    {
+      "name": "laptop",
+      "desc": "lenavo think pad",
+      "manu": "lenavo",
+      "price": 50000,
+      "id": 2
+    },
+    {
+      "name": "mobile",
+      "desc": "lenavo think pad",
+      "manu": "lenavo",
+      "price": 40000,
+      "id": 3
+    }
+  ],
+  "employee": [
+    {
+      "name": "emp 1",
+      "dept": "dept 1",
+      "desg": "desg 1",
+      "sal": 50000,
+      "id": 1
+    }
+  ]
+}

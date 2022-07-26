@@ -1,0 +1,22 @@
+1. End to end application
+2. Routes,custom pipes
+3. Custom directives
+
+Backend api using json-server
+step 1 - create api folder
+step 2 - npm i -g json-server
+step 3 - create a file db.json
+{
+	"product":[
+		{
+			"id":1,
+			"name":"product 1",
+			"desc":"product 1 desc",
+			"price":1000,
+		}
+	]
+}
+
+Step 4: cd api
+json-server --watch db.json --port 3000
+Step 4 : Perform CRUD using postman
