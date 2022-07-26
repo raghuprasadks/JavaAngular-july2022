@@ -20,3 +20,7 @@ step 3 - create a file db.json
 Step 4: cd api
 json-server --watch db.json --port 3000
 Step 4 : Perform CRUD using postman
+
+https://angular.io/guide/router-tutorial
+<product><user>
+Single Page Application (SPA>
