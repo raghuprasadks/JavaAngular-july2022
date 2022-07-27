@@ -1,0 +1,20 @@
+Pipes - custom pipes
+Directives
+Structural Directives - *ngFor *ngIf,*ngSwitch
+Attribute Directives - [ngClass] [ngStyle]
+Custom directives
+
+1. Creating custom pipes
+ng g p <pipename>
+ng g p pipes/exponentialStrength
+
+2. Update the transform method
+3. crete custompipe class
+ng g c components/custompipe
+
+Create flying-heros pipe in similar way
+refer 
+https://angular.io/guide/pipes
+
+https://www.geeksforgeeks.org/explain-pure-and-impure-pipe-in-angular/#:~:text=Pure%20pipes%20optimize%20the%20angular,value%20has%20changed%20or%20not.
+

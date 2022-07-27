@@ -24,3 +24,5 @@ Step 4 : Perform CRUD using postman
 https://angular.io/guide/router-tutorial
 <product><user>
 Single Page Application (SPA>
+
+http://localhost:4200/departments/1/overview
