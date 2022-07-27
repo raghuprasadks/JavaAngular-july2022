@@ -17,4 +17,33 @@ refer
 https://angular.io/guide/pipes
 
 https://www.geeksforgeeks.org/explain-pure-and-impure-pipe-in-angular/#:~:text=Pure%20pipes%20optimize%20the%20angular,value%20has%20changed%20or%20not.
+Practice 1 : geeksforgeek - pure and impure
+pipes search
+Custom directives
+Step 1 : ng g d directives/highlight
+Step 2 : update the constructor with following
+code
+constructor(private el: ElementRef) {
+    this.el.nativeElement.style.backgroundColor = 'yellow';
+ }
+Step 3 : ng g c components/customdirective
+Step 4 : Apply attribute directive
+<p appHighlight>Attribute directive</p>
+
+https://angular.io/guide/attribute-directives
+practice 2:hostlistener example
+
+Structural custom directive
+
+Step 1 - ng generate directive directives/unless
+
+Step 2 - Add code as mentioned in 
+https://angular.io/guide/structural-directives
+step 3 - Incorporate this directive in 
+customdirective.component.html
+
+Practice 3 : Apply toggle condition
+
+
+
 

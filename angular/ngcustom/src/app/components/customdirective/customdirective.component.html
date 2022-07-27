@@ -1,0 +1,12 @@
+<p>customdirective works!</p>
+
+<p appHighlight>Attribute directive</p>
+
+<p *appUnless="condition" class="unless a">
+    (A) This paragraph is displayed because the condition is false.
+  </p>
+  
+  <p *appUnless="!condition" class="unless b">
+    (B) Although the condition is true,
+    this paragraph is displayed because appUnless is set to false.
+  </p>
