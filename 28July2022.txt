@@ -1,0 +1,65 @@
+Recap on Java
+Recap on SQL
+Spring framework
+
+1.Features of java
+platform indedent,multi threaded
+robust,dynamic
+JVM - Java Virtual Machine
+bytecode
+
+Java is compiled both
+Hybrid 
+compiled - C,
+JDK - JRE
+JRE
+
+class
+Object
+properties
+physical attributes - size,color,price
+functionality - on,off,change
+class -
+Object
+
+Ooops
+inheritance
+polymorphism,
+
+overloading
+overriding
+encapsulation,
+Access modifers - private,public,protected,default
+Abstraction
+Abstract class
+Interface
+collection
+
+1. Create Product class
+having following attributes
+code,name,desc,manufacturer,price
+2. Product class should have a constructor
+to capture above information
+3. Product class should have a information
+method which should return all the
+attributes captured during the 
+construction
+2. Create ProductManagement class
+This class should have following methods
+addProduct(Product prod)
+should add the product to productlist 
+listProducts()
+should display all the products added
+to the productlist
+deleteProduct(int code)
+this should delete the product
+updateProduct(product prodtoupdate)
+update the product in the productlist
+
+ 
+
+
+
+
+
+
