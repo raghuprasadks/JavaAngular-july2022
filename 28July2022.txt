@@ -47,6 +47,7 @@ construction
 2. Create ProductManagement class
 This class should have following methods
 addProduct(Product prod)
+Create atleast five products
 should add the product to productlist 
 listProducts()
 should display all the products added
@@ -54,7 +55,73 @@ to the productlist
 deleteProduct(int code)
 this should delete the product
 updateProduct(product prodtoupdate)
+
+
+SQL - Structural Query Language
+DMBS
+RDBMS
+database
+Tables
+Normalization
+Primary
+Foreign key
 update the product in the productlist
+
+1. Display customers who belong to Germany
+select * from customer where country='Germany'
+2. Count - customers of  Germany
+
+select count(*) from customers where country="Germany"
+3. Countrywise count of customers
+SELECT Country,count(*) as CustCount from Customers group by Country
+
+4. Display customers having name starting with A
+SELECT * from customers where customername like 'A%'
+5. Display total numbers of orders placed by customers
+belonging to germany
+
+SELECT count(*) FROM customers,orders
+where customers.customerid = Orders.customerid and
+customers.country='Germany'
+
+6. Display countrywise total numbers of orders 
+Country Name total number of orders
+SELECT country,count(*) as ordercount FROM customers,orders
+where customers.customerid = Orders.customerid 
+group by country
+order by ordercount desc
+
+7. Display country which has maximum order value
+select country,max(orderSize) from 
+(select country,sum(od.quantity*p.price) as orderSize from customers c,orders o,orderDetails od, products p
+where c.customerID=o.customerID and o.orderID=od.orderID
+and od.productID=p.productID 
+group by country order by orderSize desc)
+
+
+Spring
+Java 2 SE
+JSE - Standard Edition
+JEE - Enterprise Edition
+JME - Micro Edition
+
+JEE - Servlets,JSP,EJB
+
+Inversion of Control (IoC)
+Dependency Injection (DI)
+
+Employee
+Address
+
+Spring 
+Spring boot extension of Spring
+starter template
+
+
+
+
+
+
 
  
 
