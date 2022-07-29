@@ -9,5 +9,12 @@ public class TestConfig {
         ApplicationContext context =  new AnnotationConfigApplicationContext(BeanConfig.class);
         Customer customer = context.getBean(Customer.class);
         customer.info();
+        ScopeDemo scopeDemo1 = context.getBean(ScopeDemo.class);
+        scopeDemo1.setTitle("Title 1");
+        System.out.println("scopeDemo1:Title" +scopeDemo1.getTitle());
+        ScopeDemo scopeDemo2 = context.getBean(ScopeDemo.class);
+        System.out.println("scopeDemo2:Title" +scopeDemo2.getTitle());
+
+
     }
 }
