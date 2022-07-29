@@ -3,7 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+<!-- Property
     <bean id="doctor" class="demo.Doctor">
+        <property name="qualification" value="MBBS"></property>
+        <property name="id" value="1"></property>
+    </bean>
+-->
+    <bean id="doctor" class="demo.Doctor">
+        <constructor-arg name="id" value="1" type="int"></constructor-arg>
+        <constructor-arg name="qualification" value="MD"></constructor-arg>
+        <property name="nurse" ref="nurse"></property>
+    </bean>
+    <bean id="nurse" class="demo.Nurse">
+
     </bean>
 </beans>
