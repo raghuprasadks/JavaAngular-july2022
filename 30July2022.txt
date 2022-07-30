@@ -1,0 +1,29 @@
+Spring boot
+1. Getting start
+2. Rest API
+3. Rest API with Data JPA (Java Persistence API)
+Spring - Java Framework
+Spring boot is an extension of Spring which 
+helps in configuration
+Dependency management
+Starters
+Monitoring the status
+
+Steps for Creating Rest API's using spring boot
+1. Visit https://start.spring.io/
+
+http://localhost:8080/
+
+
+Product
+id
+name
+desc
+manu
+price
+
+entity
+POJO - Plain Old Java Object
+
+
+
