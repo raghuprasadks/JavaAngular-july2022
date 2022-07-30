@@ -24,6 +24,11 @@ price
 
 entity
 POJO - Plain Old Java Object
+http://localhost:8080/h2-console
 
+Assignment:
+
+CRUD and Search
+for Product entity using JPA
 
 
