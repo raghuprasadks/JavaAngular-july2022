@@ -1,0 +1,21 @@
+1. JPA with MySQL with error handling
+2. Angular front end
+3. Integration - End to end
+4. Discussion and finalization of 
+modules of mini project
+5. JPA relationship
+one-one,one-many,many-one,many-many
+
+jpacrudmysql
+
+dependencies
+web,mysql,data jpa
+dev
+
+getAllTutorials()
+localhost:8080/tutorials
+Query parameter
+localhost:8080/tutorials?title=title 1
+
+Path variable
+localhost:8080/tutorials/1

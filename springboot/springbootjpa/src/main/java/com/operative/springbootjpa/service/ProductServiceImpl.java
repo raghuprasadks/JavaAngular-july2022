@@ -12,7 +12,7 @@ public class ProductServiceImpl implements ProductService{
     ProductRepository productRepository;
     @Override
     public Product addProduct(Product product) {
-        
+
         return productRepository.save(product);
 
     }
