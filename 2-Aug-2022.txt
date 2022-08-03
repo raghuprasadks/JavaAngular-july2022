@@ -1,0 +1,13 @@
+https://dotnettutorials.net/lesson/dropdownlist-angular-template-driven-forms/
+
+one to one mapping
+one to many
+many to many
+
+Employee 
+id,code,name,dept,desg,sal,address_id
+
+Address
+id,address1,address2,city,pincode
+https://github.com/Dev2ProdCoding/spring-data-jpa-mappings
+

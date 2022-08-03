@@ -1,0 +1,6 @@
+End to end application
+@Query
+Native Query
+Reference tutorials
+https://www.bezkoder.com/
+https://www.baeldung.com/spring-angular-ecommerce
