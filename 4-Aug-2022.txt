@@ -1,0 +1,12 @@
+https://www.bezkoder.com/spring-boot-login-example-mysql/
+https://github.com/bezkoder/spring-boot-login-example
+
+Spring Security
+What are the different ways
+JWT - Json Web Token
+http - stateless protocol
+session based token
+JWT token
+
+bezkoder=
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aXZla2FuYW5kYSIsImlhdCI6MTY1OTU5MzE4NSwiZXhwIjoxNjU5Njc5NTg1fQ.FTUidAjxnSk71xrdv7umteYc7f0B-xwraRfIrdgnbO-BLLPTIYmskdR-iZx8zbar3y27nyaIJ6OAvN-Dnv-mZA
