@@ -1,5 +1,6 @@
 https://www.bezkoder.com/spring-boot-login-example-mysql/
 https://github.com/bezkoder/spring-boot-login-example
+https://github.com/bezkoder/angular-12-jwt-auth
 
 Spring Security
 What are the different ways
