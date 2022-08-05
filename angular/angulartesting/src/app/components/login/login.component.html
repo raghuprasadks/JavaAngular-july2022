@@ -1,0 +1,13 @@
+<form>
+    <h1>Login Form</h1>
+    <label>Email</label>
+    <input type="email"
+           #email>
+    <label>Password</label>
+    <input type="password"
+           #password>
+    <button type="button"
+            (click)="login(email.value, password.value)"
+            [disabled]="!enabled">Login
+    </button>
+  </form>
