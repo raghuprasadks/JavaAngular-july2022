@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DemoPipe } from './pipes/demo.pipe';
 import { LoginComponent } from './components/login/login.component';
+import { DemoTempFormComponent } from './components/demo-temp-form/demo-temp-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoPipe,
-    LoginComponent
+    LoginComponent,
+    DemoTempFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
