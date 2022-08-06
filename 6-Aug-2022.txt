@@ -1,0 +1,20 @@
+End to end application
+Unit testing of spring boot
+Write unit test case jasmine and karma
+Life cycle hooks
+MCQ - Spring boot
+
+1. Vet clinic - End to end application
+https://github.com/spring-petclinic/spring-petclinic-rest
+https://github.com/spring-petclinic/spring-petclinic-angular
+mvn spring-boot:run
+
+application properties
+spring.profiles.active=mysql,spring-data-jpa
+https://spring-petclinic-community.herokuapp.com/
+
+
+
+
+
+
